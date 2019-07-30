@@ -1,0 +1,10 @@
+If The Service layer is just calling the methods of DAO layers to perform CRUD operations. wouldn't be sensible to just call the DAO layers methods directly?
+
+It is a good idea to have those two layers when your business logic is more complex than your data logic. The service layer implements the business logic. In most cases, this layer has to perform more operations than just calling a method from a DAO object. And if you're thinking of making your application bigger, this is probably the best solution.
+
+The service layer manages the domain model objects and communicates with other services and the repository layer.
+
+Service layer is the middle layer between presentation and data store. It abstracts business logic and data access. The idea behind such a layer is to have an architecture which can support multiple presentation layers such as web, mobile, etc.
+
+java service interface
+n Java, a service is defined by a set of interfaces and classes. ... The ServiceLoader<S> class (java.util) in JDK is responsible for discovering and loading all the service providers at a runtime for a service interface of type S. The ServiceLoader class allows decoupling between the providers and consumers.
